@@ -1,0 +1,160 @@
+/* about-section */
+.about {
+  max-width: 768px;
+  min-width: 375px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-image: url(images/about_bg.png);
+  background-size: 100% 90vh;
+  padding: 20px;
+  background-color: #fbfbfb;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+}
+
+.about-header h1 {
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 44px;
+}
+
+.about-header h2 {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+}
+
+.about-container p {
+  padding: 20px;
+  color: var(--black-color);
+}
+
+.about-container span {
+  text-align: center;
+}
+
+.about-container a {
+  text-decoration: none;
+  color: var(--black-color);
+  display: inline;
+  border-bottom: 1px solid var(--black-color);
+  margin-bottom: 40px;
+}
+
+.contact {
+  max-width: 768px;
+  min-width: 375px;
+}
+
+.contact-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10%;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.contact-image,
+.contact-image1 {
+  position: relative;
+  background-color: red;
+}
+
+.contact-image::after {
+  content: "TEES FOR WOMEN";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-image1::after {
+  content: "TEES FOR MEN";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.contact-image img,
+.contact-image1 img {
+  opacity: 0.5;
+  width: 200px;
+}
+
+.contact-container img {
+  width: 300px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .about,
+  .contact {
+    max-width: 100%;
+  }
+
+  .about-header h2 {
+    display: none;
+  }
+
+  .about-container p {
+    margin: 0 10%;
+    background-color: #fff;
+    padding: 2% 5%;
+  }
+
+  .about-container span {
+    margin: 5% 15%;
+    font-weight: 600;
+    color: var(--black-color);
+  }
+
+  .contact-container {
+    gap: 10px;
+    padding: 4%;
+    margin: 0 10%;
+    background-color: #fff;
+  }
+
+  .contact-container img,
+  .contact-image img {
+    width: 200px;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

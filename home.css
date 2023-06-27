@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --main-color: #ec5242;
+  --black-color: #272a31;
+  --font-color: #d3d3d3;
+}
+
+.header-black {
+  display: none;
+}
+
+header {
+  max-width: 768px;
+  min-width: 375px;
+  height: 10vh;
+}
+
+header nav .union-logo {
+  left: 0;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+header .image-logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 40%;
+}
+
+header nav ul {
+  display: none;
+}
+
+#menu-close {
+  float: right;
+  background: transparent;
+  border: none;
+  color: var(--black-color);
+  cursor: pointer;
+  font-size: 24px;
+  margin: 20px 30px 0 0;
+}
+
+#menu {
+  padding: 20px;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  max-width: 768px;
+  min-width: 375px;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+#menu ul {
+  padding: 40px;
+}
+
+#menu ul li {
+  padding: 10px;
+}
+
+#menu ul li a {
+  color: var(--black-color);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#menu ul li a:hover {
+  color: var(--main-color);
+}
+
+main {
+  max-width: 768px;
+  min-width: 375px;
+}
+
+/* home */
+.home {
+  background-image: url(images/home-bg1.png);
+  background-size: 100% 90vh;
+  height: 90vh;
+  color: var(--main-color);
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+  gap: 15px;
+}
+
+.home-content h2,
+.home-content h1,
+.home-content p,
+.home-content h3 {
+  margin: 0;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.home-content .para {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.home-content p {
+  background-color: #eee;
+  padding: 10px;
+  color: #696969;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.home-content h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #525252;
+}
+
+.main-features {
+  background-image: url(images/about-bg.jpg);
+  background-size: 100% 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.main-header h2 {
+  font-size: calc(1.325rem + 0.9vw);
+  font-weight: 700;
+  color: #fff;
+}
+
+.line {
+  border: 1px solid var(--main-color);
+  width: 50px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  background-color: #80808080;
+  gap: 10px;
+  padding: 5px;
+}
+
+.features p {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.features img {
+  height: 60px;
+}
+
+.features h5 {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.main-container button {
+  background-color: var(--main-color);
+  color: #fff;
+  height: 50px;
+  width: 50%;
+  align-self: center;
+  margin: 40px 0;
+  border: none;
+}
+
+.product-details p {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--font-color);
+}
+
+.footer-content p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #272a31;
+}
+
+.main-container a p {
+  display: none;
+}
+
+/* section-product */
+.section-product {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212529;
+  padding: 20px 0;
+  line-height: 44px;
+}
+
+.product-header h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.product-image img {
+  height: 120px;
+  width: 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-details h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+.product-details span {
+  color: var(--main-color);
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.line-black {
+  border: 1px solid var(--black-color);
+  width: 40px;
+  margin: 5px 0;
+}
+
+
+
+/* section-partner */
+.section-partner {
+  background-color: var(--black-color);
+}
+
+.partner-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.partner-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212529;
+  padding: 20px;
+  line-height: 44px;
+}
+
+.partner-header h2 {
+  color: #525252;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.partner-line {
+  border: 1px solid var(--main-color);
+  width: 30px;
+  height: 0;
+  opacity: 0.7;
+}
+
+.partner-content {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.partner-content img {
+  height: 70px;
+  width: 120px;
+  padding: 10px;
+  flex-grow: 0;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-content img {
+  height: 30px;
+  width: 150px;
+}
+
+.footer-content p span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-black {
+    display: flex;
+    justify-content: flex-end;
+    height: 8vh;
+    background-color: #3e3e3e;
+    color: #fff;
+  }
+
+  header nav ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  header nav ul li {
+    margin-left: 20px;
+    padding: 5px;
+  }
+
+  .header-black ul {
+    display: flex;
+    gap: 20px;
+    margin-right: 15%;
+  }
+
+  .header-black ul li {
+    margin-top: 8px;
+  }
+
+  header nav ul li img {
+    width: 20px;
+  }
+
+  header nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: #888;
+    font-size: 0.938em;
+    font-weight: bold;
+  }
+
+  .main-container a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .header-black ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.813em;
+    text-align: center;
+  }
+
+  .header-black ul li a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  header {
+    max-width: 100%;
+    display: flex;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  header nav .union-logo {
+    display: none;
+  }
+
+  header nav ul li a:hover {
+    transform: scale(1.1);
+    color: var(--main-color);
+  }
+
+  header nav ul li:last-child {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  .home-content {
+    padding: 10% 5%;
+    margin: 0 15%;
+  }
+
+  .home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+  .home-content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .home-content p {
+    font-size: 1.2rem;
+  }
+
+  .main-container {
+    padding: 50px;
+  }
+
+  .features-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-container button {
+    display: none;
+  }
+
+  .main-container a p {
+    display: inline;
+    border-bottom: 1px solid #fff;
+  }
+
+  /* products */
+
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5% 10%;
+  }
+
+  .product-content {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .footer-content {
+    display: flex;
+    margin: 2% 10%;
+    gap: 60px;
+  }
+
+  .footer-content p span {
+    display: block;
+  }
+}
